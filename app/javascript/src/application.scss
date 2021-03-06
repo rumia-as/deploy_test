@@ -1,1 +1,27 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    padding-top: 50px;
+    background-color: lightgray;
+}
+
+.starter-template {
+    padding: 40px 40px;
+    background-color: white;
+}
+
+.color-talk {
+    color: lightseagreen;
+}
+
+.color-wrench {
+    color: steelblue;
+}
+
+.color-heart {
+    color: plum;
+}
+
+.icon-size {
+    font-size: 200%;
+}
