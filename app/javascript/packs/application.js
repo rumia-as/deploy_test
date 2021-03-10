@@ -1,4 +1,5 @@
 import 'bootstrap'
+import '@fortawesome/fontawesome-free/js/all'
 import '../src/application.scss'
 /* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files

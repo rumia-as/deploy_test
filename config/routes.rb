@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'portfolio/index'
   get 'static_pages/home'
   resources :articles
   get 'welcome/index'

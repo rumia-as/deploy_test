@@ -1,27 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+head {
+    padding-left: 20px;
+}
 
 body {
-    padding-top: 50px;
-    background-color: lightgray;
-}
+    padding-left:20px;
+  }
 
-.starter-template {
-    padding: 40px 40px;
-    background-color: white;
-}
-
-.color-talk {
-    color: lightseagreen;
-}
-
-.color-wrench {
-    color: steelblue;
-}
-
-.color-heart {
-    color: plum;
-}
-
-.icon-size {
-    font-size: 200%;
-}
+  
