@@ -2,12 +2,40 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 
-head {
-    padding-left: 20px;
+body {
+    padding-top: 50px;
+    background-color: lightgray;
 }
 
-body {
-    padding-left:20px;
+.starter-template {
+    padding: 40px 40px;
+    background-color: white;
+}
+
+.twitter-blue{
+    color:#55acee; /*Twitterカラー*/
   }
 
-  
+.line-green{
+    color:#1dcd00; /*LINEカラー*/
+  }
+
+.facebook-blue{
+    color:#4267b2; /*Facebookカラー*/
+  }
+
+.amazon-black{
+    color: #1c1919; /*Amazonカラー*/
+}
+
+.youtube-red{
+    color: #Ff0000; /*Youtubeカラー*/
+}
+
+.docker-blue{
+    color: #0db7ed; /*Dockerカラー*/
+}
+
+.github-black{
+    color: #333333; /*Githubuカラー*/
+}
