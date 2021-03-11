@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>DeployTest</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <%= javascript_pack_tag 'application', media: 'all' %>
+    <%= stylesheet_pack_tag 'application' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+  <a class="navbar-brand" href="#">PortFolio Navbar!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+        <a class="nav-link" href="#">ホーム <span class="sr-only">（現在位置）</span></a>
+      </li>
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">Link</a> -->
+        <a class="nav-link" href="#">リンク</a>
+      </li>
+      <li class="nav-item">
+        <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
+        <a class="nav-link disabled" href="#">無効なボタン</a>
+      </li>
+      <li class="nav-item dropdown">
+        <!-- <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a> -->
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ドロップダウンリスト</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <!-- <a class="dropdown-item" href="#">Action</a> -->
+          <a class="dropdown-item" href="#">アクション</a>
+          <!-- <a class="dropdown-item" href="#">Another action</a> -->
+          <a class="dropdown-item" href="#">別のアクション</a>
+          <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+          <a class="dropdown-item" href="#">異なるなにか</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
+      <input class="form-control mr-sm-2" type="text" placeholder="検索" aria-label="検索">
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+    </form>
+  </div>
+</nav>
+
+
+    </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
