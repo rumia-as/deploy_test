@@ -1,0 +1,2 @@
+module RareFishMapHelper
+end

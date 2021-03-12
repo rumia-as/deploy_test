@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fish:</strong>
+  <%= @rare_fish.fish_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @rare_fish.user %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @rare_fish.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @rare_fish.content %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @rare_fish.image %>
+</p>
+
+<p>
+  <strong>Adless:</strong>
+  <%= @rare_fish.adless %>
+</p>
+
+<p>
+  <strong>Like:</strong>
+  <%= @rare_fish.like %>
+</p>
+
+<%= link_to 'Edit', edit_rare_fish_path(@rare_fish) %> |
+<%= link_to 'Back', rare_fishes_path %>

@@ -1,0 +1,2 @@
+module RareFishesHelper
+end

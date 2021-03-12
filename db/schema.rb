@@ -10,11 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_11_130055) do
+ActiveRecord::Schema.define(version: 2021_03_12_064116) do
 
   create_table "articles", force: :cascade do |t|
     t.string "content"
     t.integer "point"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rare_fishes", force: :cascade do |t|
+    t.integer "fish_id"
+    t.string "user"
+    t.string "title"
+    t.string "content"
+    t.string "image"
+    t.string "adless"
+    t.integer "like"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

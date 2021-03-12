@@ -1,0 +1,2 @@
+class RareFish < ApplicationRecord
+end
