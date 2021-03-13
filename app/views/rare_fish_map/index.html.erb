@@ -3,7 +3,60 @@
   <%= link_to "Settings", edit_user_registration_path %> |
   <%= link_to "Logout", destroy_user_session_path, method: :delete %>
 <% end %>
-
 <h1>RareFishMap#index</h1>
 <p>Find me in app/views/rare_fish_map/index.html.erb</p>
+
+<div class="container">
+  <div class="starter-template">
+    <div class="row text-left">
+      <div class="col-sm-6">
+        ここに詳細が記述される<p id="notice"><%= notice %></p>
+
+        <h1>Rare Fishes</h1>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Fish</th>
+              <th>User</th>
+              <th>Title</th>
+              <th>Content</th>
+              <th>Image</th>
+              <th>Adless</th>
+              <th>Like</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <% @rare_fishes.each do |rare_fish| %>
+              <tr>
+                <td><%= rare_fish.fish_id %></td>
+                <td><%= rare_fish.user %></td>
+                <td><%= rare_fish.title %></td>
+                <td><%= rare_fish.content %></td>
+                <td><%= rare_fish.image %></td>
+                <td><%= rare_fish.adless %></td>
+                <td><%= rare_fish.like %></td>
+                <td><%= link_to 'Show', rare_fish %></td>
+                <td><%= link_to 'Edit', edit_rare_fish_path(rare_fish) %></td>
+                <td><%= link_to 'Destroy', rare_fish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        
+        <br>
+        
+        <%= link_to 'New Rare Fish', new_rare_fish_path %>
+        
+      </div>
+      <div class="col-sm-6">
+        ここにコメントが記述される
+      </div>
+    </div>
+  </div>
+</div>
+
 <%= link_to 'Show list',rare_fishes_path %>
+
