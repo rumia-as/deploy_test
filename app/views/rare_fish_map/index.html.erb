@@ -85,7 +85,8 @@
           <tbody>
             <% @rare_fishes.each do |rare_fish| %>
               <tr>
-                <td><%= rare_fish.fish_id %></td>
+                <td><%= rare_fish.fish_id[1] %></td>
+                
                 <td><%= rare_fish.user %></td>
                 <td><%= rare_fish.title %></td>
                 <td><%= rare_fish.content %></td>
@@ -93,8 +94,6 @@
                 <td><%= rare_fish.adless %></td>
                 <td><%= rare_fish.like %></td>
                 <td><%= link_to 'Show', rare_fish %></td>
-                <td><%= link_to 'Edit', edit_rare_fish_path(rare_fish) %></td>
-                <td><%= link_to 'Destroy', rare_fish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
               </tr>
             <% end %>
 
@@ -109,10 +108,41 @@
       </div>
       <div class="col-sm-6">
         ここにコメントが記述される<br>
+        <% player = ["test","test2","test3"] %>
+        <% player2 = ["test","Nice Here!!","test3"] %>
+        <% player3 = ["test","test2","test3"] %>
+        <% team = [player,player2,player3] %>
+        <% price = 2500 * 1.05 %>
+<p>
+スタートポイント：<%= team %>：エンドポイント。<br>
+スタートポイント：<%= @rare_fishes %>：エンドポイント。
+</p>
       </div>
     </div>
   </div>
 </div>
 
-<%= link_to 'Show list',rare_fishes_path %>
+<!--さらにコンテナを分ける--><br>
+<% @rare_fishes.each do |rare_fish| %>
+<tr>
+  <div class="container">
+    <div class="starter-template">
+      <div class="row text-left">
+        <div class="col-sm-6">
+  <td><%= rare_fish.fish_id %></td>
+  
+  <td><%= rare_fish.user %></td>
+  <td><%= rare_fish.title %></td>
+  <td><%= rare_fish.content %></td>
+  <td><%= rare_fish.image %></td>
+  <td><%= rare_fish.adless %></td>
+  <td><%= rare_fish.like %></td>
+  <td><%= link_to 'Show', rare_fish %></td>
+</tr></div>
+<div class="col-sm-6">ここにコメントが記載される</div>
+</div></div></div><br>
+<% end %>
+
+
+<br><br><%= link_to 'Show list',rare_fishes_path %>
 
