@@ -31,6 +31,14 @@
       <li class="nav-item">
         <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
         <a class="nav-link disabled" href="#">無効なボタン</a>
+        <% if user_signed_in? %>
+      　 <strong style="color:white">ログイン中→ <%= current_user.name %></strong>.
+        <%= link_to "変更", edit_user_registration_path %> |
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        <% else %>
+        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
+        <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
+      <% end %>
       </li>
       <li class="nav-item dropdown">
         <!-- <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a> -->

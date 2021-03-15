@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @fish_tweet.user_id %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @fish_tweet.image %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @fish_tweet.content %>
+</p>
+
+<p>
+  <strong>Like:</strong>
+  <%= @fish_tweet.like %>
+</p>
+
+<%= link_to 'Edit', edit_fish_tweet_path(@fish_tweet) %> |
+<%= link_to 'Back', fish_tweets_path %>

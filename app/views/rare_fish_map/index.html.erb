@@ -53,6 +53,7 @@
       </div>
       <div class="col-sm-6">
         ここにコメントが記述される
+        
       </div>
     </div>
   </div>
@@ -113,6 +114,13 @@
         <% player3 = ["test","test2","test3"] %>
         <% team = [player,player2,player3] %>
         <% price = 2500 * 1.05 %>
+        <% array = [[10,20],[30,40]] %>
+        <% array.each do |a| %>
+        <%= p a %>
+        <p>ーーーー</p>
+        
+        <p>ーーーー</p>
+        <% end %>
 <p>
 スタートポイント：<%= team %>：エンドポイント。<br>
 スタートポイント：<%= @rare_fishes %>：エンドポイント。

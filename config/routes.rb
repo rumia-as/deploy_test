@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :fish_tweets
   get 'rare_fish_map/index'
   resources :rare_fishes
   devise_for :users
