@@ -168,6 +168,7 @@
 </div>
 
 <!--さらにコンテナを分ける--><br>
+<%= x = 0 %>
 <% @rare_fishes.each do |rare_fish| %>
 <tr>
   <div class="container">
@@ -184,7 +185,8 @@
   <td><%= rare_fish.like %></td>
   <td><%= link_to 'Show', rare_fish %></td>
 </tr></div>
-<div class="col-sm-6">ここにコメントが記載される</div>
+<div class="col-sm-6">
+  <%= x = x+1 %>ここにコメントが記載される</div>
 </div></div></div><br>
 <% end %>
 
