@@ -1,4 +1,5 @@
 class FishTweetsController < ApplicationController
+  protect_from_forgery
   before_action :authenticate_user!, only: [:new, :create, :update, :destroy]
   before_action :set_fish_tweet, only: %i[ show edit update destroy ]
 

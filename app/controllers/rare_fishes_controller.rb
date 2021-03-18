@@ -6,6 +6,7 @@ class RareFishesController < ApplicationController
     @rare_fishes = RareFish.all
   end
 
+
   # GET /rare_fishes/1 or /rare_fishes/1.json
   def show
   end
