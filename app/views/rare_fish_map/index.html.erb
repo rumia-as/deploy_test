@@ -10,7 +10,7 @@
   <div class="starter-template">
     <div class="row text-left">
       <div class="col-sm-6">
-        ここに詳細が記述される<p id="notice"><%= notice %></p>
+        デバッグ用の掲示板<p id="notice"><%= notice %></p>
 
         <h1>Rare Fishes</h1>
         
@@ -40,7 +40,7 @@
                 <td><%= rare_fish.like %></td>
                 <td><%= link_to 'Show', rare_fish %></td>
                 <td><%= link_to 'Edit', edit_rare_fish_path(rare_fish) %></td>
-                <td><%= link_to 'Destroy', rare_fish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= button_to 'Destroy', rare_fish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
               </tr>
             <% end %>
           </tbody>
@@ -131,7 +131,7 @@
                 <td><%= rare_fish.image %></td>
                 <td><%= rare_fish.adless %></td>
                 <td><%= rare_fish.like %></td>
-                <td><%= link_to 'Show', rare_fish %></td>
+                <td><%= link_to '詳細', rare_fish, class: 'btn btn-success' %></td>
               </tr>
             <% end %>
 
@@ -145,7 +145,7 @@
         
       </div>
       <div class="col-sm-6">
-        ここにコメントが記述される<br>
+        デバッグ用のテストエリア<br>
         <% player = ["test","test2","test3"] %>
         <% player2 = ["test","Nice Here!!","test3"] %>
         <% player3 = ["test","test2","test3"] %>
